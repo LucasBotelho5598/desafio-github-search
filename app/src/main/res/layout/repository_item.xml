@@ -20,23 +20,27 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_card_content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            >
 
             <ImageView
-                android:id="@+id/iv_favorite"
+                android:id="@+id/sharing"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_margin="16dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:focusable="true"
-                android:src="@drawable/ic_share"
+                android:src="@drawable/sharing_white"
+                android:contentDescription="Compartilhar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_preco"
+                android:id="@+id/name_reposit"
+                android:textColor="@color/white"
                 style="@style/TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
